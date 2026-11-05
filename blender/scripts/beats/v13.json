@@ -1,0 +1,221 @@
+{
+ "_doc": "Beat sheet v13 (03/11): golden hour \u2192 twilight with fairy lights at app 7.4 s (EXPO_PUBLIC_LOOKSWITCH=7.4, 1.6 s crossfade); recording render/promo/v13/screen.mp4 (film start 1.2833); promo background follows the light (peach \u2192 dusk blue over 96 frames); night end card; same events as v9. v12: sun/lantern glints on the rims, exposure glide during the crossfade. v13: warm fairy-light droplets at night, end-card ring kept off the text, shimmer on the light change.",
+ "app_start": 0.0,
+ "app_end": 14.3,
+ "card": 3.0,
+ "sync_offset": 0.0,
+ "audio": "render/audio/mix_v13.wav",
+ "sheet": [
+  0.05,
+  2.4,
+  5.1,
+  8.1,
+  10.7,
+  16.4
+ ],
+ "screen_gain": 1.04,
+ "card_screen": null,
+ "bg": [
+  [
+   "start",
+   "#f6b98a",
+   "#f3c9a0",
+   "#a9b894",
+   "#ffe3b0",
+   0.55,
+   0
+  ],
+  [
+   7.4,
+   "#232552",
+   "#352f66",
+   "#151b30",
+   "#b98ab8",
+   0.3,
+   96
+  ],
+  [
+   12.4,
+   "#262857",
+   "#3a3170",
+   "#141a2e",
+   "#b98ab8",
+   0.3,
+   120
+  ],
+  [
+   "card",
+   "#20234d",
+   "#33306a",
+   "#121829",
+   "#b98ab8",
+   0.3,
+   0
+  ]
+ ],
+ "bokeh_n": 26,
+ "bubbles_n": 8,
+ "camera_d": 5.0,
+ "card_d": 8.6,
+ "card_phone": {
+  "loc": [
+   1.22,
+   -2.7,
+   0.05
+  ],
+  "rot": [
+   0,
+   0,
+   -8
+  ]
+ },
+ "card_x": -0.95,
+ "title": "Soap Bubbles",
+ "tagline": "Blow. Watch it shimmer. Pop.",
+ "title_in": 0.12,
+ "title_step": 0.055,
+ "music": {
+  "bars_to_card": 7,
+  "t0": 0.0
+ },
+ "events": {
+  "breath": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.8,
+    0.0
+   ],
+   [
+    1.05,
+    0.28
+   ],
+   [
+    1.5,
+    0.4
+   ],
+   [
+    2.9,
+    0.42
+   ],
+   [
+    3.6,
+    0.36
+   ],
+   [
+    3.85,
+    0.0
+   ],
+   [
+    4.55,
+    0.0
+   ],
+   [
+    4.65,
+    0.92
+   ],
+   [
+    5.0,
+    0.9
+   ],
+   [
+    5.1,
+    0.0
+   ],
+   [
+    5.45,
+    0.0
+   ],
+   [
+    5.55,
+    0.96
+   ],
+   [
+    5.9,
+    0.92
+   ],
+   [
+    6.0,
+    0.0
+   ],
+   [
+    6.35,
+    0.0
+   ],
+   [
+    6.45,
+    0.86
+   ],
+   [
+    6.7,
+    0.85
+   ],
+   [
+    6.8,
+    0.0
+   ]
+  ],
+  "grow": [
+   0.9,
+   3.146
+  ],
+  "pinch": 3.146,
+  "puffs": [
+   4.6,
+   5.5,
+   6.4
+  ],
+  "sticks": [
+   4.541,
+   4.95,
+   5.316,
+   5.691,
+   6.708,
+   7.675,
+   8.025,
+   8.391,
+   9.05,
+   9.775,
+   10.625,
+   12.8,
+   13.525,
+   13.891
+  ],
+  "taps": [
+   9.216,
+   9.766,
+   10.216,
+   10.616,
+   10.966,
+   11.325,
+   11.675,
+   12.458,
+   13.891,
+   13.908,
+   13.941
+  ],
+  "big_pop": 13.525,
+  "drips": [
+   14.38,
+   14.46,
+   14.55,
+   14.63,
+   14.74
+  ],
+  "puff_split": 4.3,
+  "look_switch": 7.4
+ },
+ "text_col": {
+  "tagline": "#ffe9c8",
+  "stack": "#d7d3f0",
+  "by": "#ffc7dc",
+  "love": "#d7d3f0"
+ },
+ "vignette": "#20203f",
+ "title_shadow": "#0c0d22",
+ "world": "#3a3a66",
+ "leak": "#7a5a8a",
+ "bokeh_alpha": 0.75
+}

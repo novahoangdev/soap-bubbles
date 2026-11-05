@@ -1,0 +1,76 @@
+{
+ "w": 440,
+ "h": 956,
+ "ring": {
+  "x": 220.0,
+  "y": 764.8,
+  "r_inner": 70.0,
+  "r_outer": 87.0
+ },
+ "wand_front": {
+  "x": 131.33,
+  "y": 676.0,
+  "w": 177.33,
+  "h": 280.0,
+  "px": [
+   394,
+   2028,
+   532,
+   840
+  ],
+  "px_frame": [
+   1320,
+   2868
+  ]
+ },
+ "sun": {
+  "x": 95.54,
+  "y": 135.55
+ },
+ "sun_dir": [
+  -0.4042,
+  0.2924,
+  0.8667
+ ],
+ "env": {
+  "file": "env.jpg",
+  "size": [
+   2048,
+   1024
+  ],
+  "projection": "equirectangular",
+  "forward_u": 0.5,
+  "right_u": 0.75,
+  "left_u": 0.25,
+  "back_u": 0.0,
+  "up": "v=0 is up (zenith), v=0.5 horizon, v=1 nadir",
+  "dir_to_uv": "camera space d (x right, y up, z towards viewer): u = 0.5 + atan2(d.x, -d.z) / (2*pi), v = 0.5 - asin(d.y) / pi",
+  "origin": "bubble position, 1.2 m in front of the camera, 12 cm above the lens axis; same orientation as the main camera"
+ },
+ "focus": {
+  "distance_m": 1.2,
+  "fstop": 2.0,
+  "m_per_pt": 0.0005316
+ },
+ "color": "sRGB display-referred (Blender AgX view transform baked in); black velvet studio, one softbox",
+ "render_pct": 100,
+ "look": "studio",
+ "note": "Studio: black velvet backdrop, no sun. The key is one large rectangular softbox (5000 K, warm-neutral) up-left BEHIND the camera; 'sun_dir' points from the bubble position to its centre in camera space. 'sun' is not the light itself (it is behind the lens) but where its mirrored highlight sits on a bubble at the bubble position (upper-left). It is a big soft source: a broad, rounded-rectangle window highlight, not a point (angular size in key_light.angular_rad, width x height). env.jpg is black except the softbox and a thin strip light behind the camera on the right, so the thin-film colours carry the bubbles.",
+ "key_light": {
+  "name": "softbox",
+  "color_srgb": "#fff1e4",
+  "kelvin": 5000,
+  "distance_m": 2.2,
+  "azimuth_deg": -25.0,
+  "elevation_deg": 17.0,
+  "azimuth_convention": "0 = from the bubble towards the camera, negative = camera-left",
+  "size_m": [
+   1.2,
+   1.6
+  ],
+  "angular_rad": [
+   0.5325,
+   0.6975
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Soap Bubbles",
+    "slug": "soap-bubbles",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#120c08",
+    "splash": {
+      "backgroundColor": "#120c08",
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "dev.hoanghoa.soapbubbles",
+      "infoPlist": {
+        "CADisableMinimumFrameDurationOnPhone": true,
+        "UIRequiresFullScreen": true,
+        "UIStatusBarHidden": true,
+        "UIViewControllerBasedStatusBarAppearance": false
+      }
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Blow into the microphone to blow soap bubbles.",
+          "enableBackgroundPlayback": false
+        }
+      ],
+      "react-native-webgpu"
+    ]
+  }
+}

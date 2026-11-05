@@ -1,0 +1,64 @@
+{
+ "w": 440,
+ "h": 956,
+ "ring": {
+  "x": 220.0,
+  "y": 764.8,
+  "r_inner": 70.0,
+  "r_outer": 87.0
+ },
+ "wand_front": {
+  "x": 131.33,
+  "y": 676.0,
+  "w": 177.33,
+  "h": 280.0,
+  "px": [
+   394,
+   2028,
+   532,
+   840
+  ],
+  "px_frame": [
+   1320,
+   2868
+  ]
+ },
+ "sun": {
+  "x": 108.88,
+  "y": 165.46
+ },
+ "sun_dir": [
+  -0.0596,
+  0.1453,
+  -0.9876
+ ],
+ "env": {
+  "file": "env.jpg",
+  "size": [
+   2048,
+   1024
+  ],
+  "projection": "equirectangular",
+  "forward_u": 0.5,
+  "right_u": 0.75,
+  "left_u": 0.25,
+  "back_u": 0.0,
+  "up": "v=0 is up (zenith), v=0.5 horizon, v=1 nadir",
+  "dir_to_uv": "camera space d (x right, y up, z towards viewer): u = 0.5 + atan2(d.x, -d.z) / (2*pi), v = 0.5 - asin(d.y) / pi",
+  "origin": "bubble position, 1.2 m in front of the camera, 12 cm above the lens axis; same orientation as the main camera"
+ },
+ "focus": {
+  "distance_m": 1.2,
+  "fstop": 2.0,
+  "m_per_pt": 0.0005316
+ },
+ "color": "sRGB display-referred (Blender AgX view transform baked in); blue-hour sky, no sun",
+ "render_pct": 100,
+ "look": "night",
+ "note": "No sun at night. 'sun' is the screen position of the key lantern (warm amber globe, upper-left, 6.5 m from the lens, the brightest single light in the frame) and 'sun_dir' points from the bubble position to it in camera space. It is a small, warm, moderate source: use a weak, slightly broader highlight (about 0.3 of the golden sun). The real sparkle comes from env.jpg: hundreds of fairy-light bulbs as sharp 1-3 px points all around.",
+ "key_light": {
+  "name": "lantern_key",
+  "color_srgb": "#ffa850",
+  "distance_m": 5.37
+ }
+}

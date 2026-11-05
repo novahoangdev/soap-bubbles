@@ -1,0 +1,271 @@
+{
+ "_doc": "Beat sheet v38g: golden hour v2 (agent-built blender/scripts/golden2_look.py: backlit park at sunset, peach-amber glow, creamy bokeh with rims; env gain 0.5, no bulb lift). Screen recording for the looks reel; promo words in warm brown.",
+ "app_start": 0.0,
+ "app_end": 12.168,
+ "card": 3.0,
+ "sync_offset": 0.0,
+ "audio": "render/audio/mix_v38g.wav",
+ "sheet": [
+  0.05,
+  2.0,
+  4.4,
+  7.4,
+  9.9,
+  15.4
+ ],
+ "screen_gain": 1.04,
+ "card_screen": null,
+ "bg": [
+  [
+   "start",
+   "#c4c6d2",
+   "#b4b6c4",
+   "#8e90a0",
+   "#ffd9a8",
+   0.12,
+   0
+  ],
+  [
+   6.25,
+   "#c4c6d2",
+   "#b4b6c4",
+   "#8e90a0",
+   "#ffd9a8",
+   0.12,
+   120
+  ],
+  [
+   11.65,
+   "#c4c6d2",
+   "#b4b6c4",
+   "#8e90a0",
+   "#ffd9a8",
+   0.12,
+   120
+  ],
+  [
+   "card",
+   "#c4c6d2",
+   "#b4b6c4",
+   "#8e90a0",
+   "#ffd9a8",
+   0.12,
+   0
+  ]
+ ],
+ "bokeh_n": 26,
+ "bubbles_n": 0,
+ "camera_d": 4.5,
+ "card_d": 8.6,
+ "card_phone": {
+  "loc": [
+   1.22,
+   -2.7,
+   0.05
+  ],
+  "rot": [
+   0,
+   0,
+   -8
+  ]
+ },
+ "card_x": -0.95,
+ "title": "Soap Bubbles",
+ "tagline": "Blow. Watch it shimmer. Pop.",
+ "title_in": 0.0,
+ "title_step": 0.035,
+ "music": {
+  "bars_to_card": 7,
+  "t0": 0.0
+ },
+ "events": {
+  "breath": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.6,
+    0.0
+   ],
+   [
+    0.7,
+    0.9
+   ],
+   [
+    0.95,
+    0.85
+   ],
+   [
+    1.05,
+    0.0
+   ],
+   [
+    1.4,
+    0.0
+   ],
+   [
+    1.5,
+    0.95
+   ],
+   [
+    1.75,
+    0.9
+   ],
+   [
+    1.85,
+    0.0
+   ],
+   [
+    2.4,
+    0.0
+   ],
+   [
+    2.7,
+    0.35
+   ],
+   [
+    3.2,
+    0.5
+   ],
+   [
+    4.6,
+    0.55
+   ],
+   [
+    5.0,
+    0.0
+   ],
+   [
+    15.6,
+    0.0
+   ],
+   [
+    15.8,
+    0.9
+   ],
+   [
+    16.05,
+    0.85
+   ],
+   [
+    16.15,
+    0.0
+   ],
+   [
+    16.9,
+    0.0
+   ],
+   [
+    17.0,
+    0.95
+   ],
+   [
+    17.25,
+    0.9
+   ],
+   [
+    17.35,
+    0.0
+   ],
+   [
+    18.2,
+    0.0
+   ],
+   [
+    18.45,
+    0.3
+   ],
+   [
+    19.5,
+    0.32
+   ],
+   [
+    19.75,
+    0.0
+   ]
+  ],
+  "grow": [
+   2.4,
+   4.86
+  ],
+  "pinch": 4.86,
+  "puffs": [
+   0.668,
+   1.46
+  ],
+  "sticks": [],
+  "taps": [
+   6.127,
+   6.76,
+   6.968,
+   7.927,
+   8.177,
+   8.752,
+   9.16,
+   9.443,
+   9.927,
+   10.96,
+   11.41
+  ],
+  "big_pop": 11.268,
+  "drips": [],
+  "puff_split": 0.0,
+  "breath2_from": 2.2
+ },
+ "text_col": {
+  "tagline": "#fff1dc",
+  "stack": "#f3e2cc",
+  "by": "#ffd9b8",
+  "love": "#f3e2cc"
+ },
+ "vignette": "#1c120a",
+ "title_shadow": "#0c0d22",
+ "world": "#3a3a66",
+ "bokeh_cols": [
+  "#ffe2b8",
+  "#ffd49a",
+  "#fff0d8",
+  "#ffc98a",
+  "#f6e6d0"
+ ],
+ "bokeh_alpha": 0.3,
+ "leak": "#ffb870",
+ "words": [
+  [
+   "BLOW",
+   -0.6,
+   5.32,
+   "#fff4e2",
+   0.85,
+   0.8,
+   -1.78,
+   false
+  ],
+  [
+   "STICK",
+   5.32,
+   8.23,
+   "#ffe8cc",
+   0.85,
+   0.64,
+   -1.78,
+   false
+  ],
+  [
+   "POP",
+   8.23,
+   "card",
+   "#ffe0ea",
+   0.88,
+   0.98,
+   -1.78,
+   false
+  ]
+ ],
+ "body_in": 0.22,
+ "side_rings": [],
+ "title_font": "~/Library/Fonts/SFProDisplay-Bold.otf",
+ "bg_image": "blender/textures/promo/golden_plate.jpg",
+ "title_shadow_a": 0.0
+}

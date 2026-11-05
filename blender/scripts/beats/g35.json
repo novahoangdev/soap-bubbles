@@ -1,0 +1,337 @@
+{
+ "_doc": "Beat sheet g34b: the long calm cut as g33b, with lofi music (blender/scripts/lofi_garden.py: electric piano jazz chords, soft boom-bap, tape and vinyl) and real birdsong (blender/audio/birds/, public domain). User, 04/11 evening: lofi or peaceful, natural birdsong; many bubbles big and small; no camera jerk at the pop; a few more kinds of flowers.",
+ "app_start": 0.2,
+ "app_end": 44.5,
+ "card": 3.6,
+ "sync_offset": 0.0,
+ "audio": "render/audio/mix_g35.wav",
+ "sheet": [
+  0.05,
+  8.5,
+  13.96,
+  26.17,
+  41.5,
+  46.5
+ ],
+ "screen_gain": 1.0,
+ "card_screen": null,
+ "bg": [
+  [
+   "start",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   0
+  ],
+  [
+   6.25,
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   120
+  ],
+  [
+   11.65,
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   120
+  ],
+  [
+   "card",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   0
+  ]
+ ],
+ "bokeh_n": 8,
+ "bubbles_n": 0,
+ "camera_d": 5.0,
+ "card_d": 8.6,
+ "card_phone": {
+  "loc": [
+   1.02,
+   -2.7,
+   0.0
+  ],
+  "rot": [
+   0,
+   0,
+   -8
+  ]
+ },
+ "card_x": -0.95,
+ "title": "Soap Bubbles",
+ "tagline": "Blow one. Follow it into the meadow.",
+ "title_in": 0.0,
+ "title_step": 0.035,
+ "music": {
+  "bars_to_card": 14,
+  "t0": 0.0,
+  "style": "lofi"
+ },
+ "events": {
+  "breath": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    2.6,
+    0.0
+   ],
+   [
+    2.7,
+    0.75
+   ],
+   [
+    3.0,
+    0.68
+   ],
+   [
+    3.1,
+    0.0
+   ],
+   [
+    4.2,
+    0.0
+   ],
+   [
+    4.3,
+    0.74
+   ],
+   [
+    4.6,
+    0.66
+   ],
+   [
+    4.7,
+    0.0
+   ],
+   [
+    6.0,
+    0.0
+   ],
+   [
+    6.6,
+    0.3
+   ],
+   [
+    8.0,
+    0.42
+   ],
+   [
+    10.2,
+    0.45
+   ],
+   [
+    10.8,
+    0.4
+   ],
+   [
+    11.0,
+    0.0
+   ],
+   [
+    34.9,
+    0.0
+   ],
+   [
+    35.0,
+    0.74
+   ],
+   [
+    35.3,
+    0.66
+   ],
+   [
+    35.4,
+    0.0
+   ],
+   [
+    36.6,
+    0.0
+   ],
+   [
+    36.7,
+    0.72
+   ],
+   [
+    37.0,
+    0.64
+   ],
+   [
+    37.1,
+    0.0
+   ],
+   [
+    38.4,
+    0.0
+   ],
+   [
+    38.6,
+    0.7
+   ],
+   [
+    39.9,
+    0.66
+   ],
+   [
+    40.3,
+    0.0
+   ]
+  ],
+  "grow": [
+   2.4,
+   10.958
+  ],
+  "pinch": 10.958,
+  "puffs": [
+   2.675,
+   4.275,
+   34.974,
+   36.683
+  ],
+  "sticks": [],
+  "taps": [
+   11.05,
+   11.525,
+   11.958,
+   12.391,
+   12.833,
+   13.3,
+   37.591,
+   38.024,
+   38.691,
+   42.058,
+   44.391
+  ],
+  "big_pop": 26.774,
+  "drips": [],
+  "puff_split": 0.0,
+  "breath2_from": 2.2,
+  "puff_windows": [
+   [
+    2.6,
+    3.1
+   ],
+   [
+    4.2,
+    4.7
+   ],
+   [
+    34.9,
+    35.4
+   ],
+   [
+    36.6,
+    37.1
+   ],
+   [
+    38.4,
+    40.3
+   ]
+  ],
+  "pinch2": 35.041
+ },
+ "text_col": {
+  "tagline": "#2f4a2b",
+  "stack": "#3e5a39",
+  "by": "#35522f",
+  "love": "#4c6747"
+ },
+ "vignette": "#2a3a22",
+ "title_shadow": "#fff8ea",
+ "world": "#2c4632",
+ "bokeh_cols": [
+  "#fffbe8",
+  "#f7f3dc",
+  "#fff6d6",
+  "#eef4e0",
+  "#fdf8ee"
+ ],
+ "bokeh_alpha": 0.12,
+ "leak": "#fff0c4",
+ "words": [
+  [
+   "BLOW",
+   -0.6,
+   10.958,
+   "#35522f",
+   0.92,
+   1.25,
+   -1.55,
+   false
+  ],
+  [
+   "FOLLOW",
+   10.958,
+   26.774,
+   "#35522f",
+   0.92,
+   0.86,
+   -1.55,
+   false
+  ],
+  [
+   "POP",
+   26.774,
+   34.5,
+   "#35522f",
+   0.92,
+   1.4,
+   -1.55,
+   false
+  ],
+  [
+   "AGAIN",
+   34.5,
+   "card",
+   "#35522f",
+   0.92,
+   1.1,
+   -1.55,
+   false
+  ]
+ ],
+ "body_in": 0.22,
+ "side_rings": [],
+ "title_font": "~/Library/Fonts/SFProRounded-Heavy.otf",
+ "bg_image": "blender/textures/promo/garden3d_plate.jpg",
+ "title_shadow_a": 0.0,
+ "stack": "Expo \u00b7 React Native \u00b7 three.js WebGPU \u00b7 Blender",
+ "phone_x": 0.62,
+ "body_align": "LEFT",
+ "body_layout": {
+  "tagline": [
+   0.24,
+   0.28,
+   1.0
+  ],
+  "stack": [
+   0.14,
+   -0.06,
+   1.0
+  ],
+  "by": [
+   0.17,
+   -0.42,
+   1.0
+  ],
+  "love": [
+   0.15,
+   -0.7,
+   1.0
+  ]
+ },
+ "title_col": "#2f4a2b"
+}

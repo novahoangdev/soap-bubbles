@@ -1,0 +1,272 @@
+{
+ "_doc": "Beat sheet g5: the 3D garden (three.js WebGPU) \u2014 two puffs, a long breath, the big bubble flies off and the camera follows it to the oak, it pops, cut to the card while the phone keeps playing (home again, a second round). Events from the app's own log (tools/events3d.py), film start from the haze veil (tools/filmstart3d.py).",
+ "app_start": 0.2,
+ "app_end": 12.189,
+ "card": 3.0,
+ "sync_offset": 0.0,
+ "audio": "render/audio/mix_g5.wav",
+ "sheet": [
+  0.05,
+  1.6,
+  4.4,
+  7.4,
+  10.6,
+  14.16
+ ],
+ "screen_gain": 1.0,
+ "card_screen": null,
+ "bg": [
+  [
+   "start",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   0
+  ],
+  [
+   6.25,
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   120
+  ],
+  [
+   11.65,
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   120
+  ],
+  [
+   "card",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   0
+  ]
+ ],
+ "bokeh_n": 26,
+ "bubbles_n": 0,
+ "camera_d": 4.5,
+ "card_d": 8.6,
+ "card_phone": {
+  "loc": [
+   1.22,
+   -2.7,
+   0.05
+  ],
+  "rot": [
+   0,
+   0,
+   -8
+  ]
+ },
+ "card_x": -0.95,
+ "title": "Soap Bubbles",
+ "tagline": "Blow one. Follow it into the meadow.",
+ "title_in": 0.0,
+ "title_step": 0.035,
+ "music": {
+  "bars_to_card": 6,
+  "t0": 0.0
+ },
+ "events": {
+  "breath": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.6,
+    0.0
+   ],
+   [
+    0.7,
+    0.9
+   ],
+   [
+    0.95,
+    0.85
+   ],
+   [
+    1.05,
+    0.0
+   ],
+   [
+    1.4,
+    0.0
+   ],
+   [
+    1.5,
+    0.95
+   ],
+   [
+    1.75,
+    0.9
+   ],
+   [
+    1.85,
+    0.0
+   ],
+   [
+    2.4,
+    0.0
+   ],
+   [
+    2.7,
+    0.35
+   ],
+   [
+    3.2,
+    0.5
+   ],
+   [
+    4.6,
+    0.55
+   ],
+   [
+    5.0,
+    0.0
+   ],
+   [
+    15.6,
+    0.0
+   ],
+   [
+    15.8,
+    0.9
+   ],
+   [
+    16.05,
+    0.85
+   ],
+   [
+    16.15,
+    0.0
+   ],
+   [
+    16.9,
+    0.0
+   ],
+   [
+    17.0,
+    0.95
+   ],
+   [
+    17.25,
+    0.9
+   ],
+   [
+    17.35,
+    0.0
+   ],
+   [
+    18.2,
+    0.0
+   ],
+   [
+    18.45,
+    0.3
+   ],
+   [
+    19.5,
+    0.32
+   ],
+   [
+    19.75,
+    0.0
+   ]
+  ],
+  "grow": [
+   2.4,
+   4.856
+  ],
+  "pinch": 4.856,
+  "puffs": [
+   0.664,
+   1.464
+  ],
+  "sticks": [],
+  "taps": [
+   6.122,
+   6.764,
+   6.973,
+   7.931,
+   8.181,
+   8.748,
+   9.156,
+   9.439,
+   9.931,
+   10.964,
+   11.414
+  ],
+  "big_pop": 11.289,
+  "drips": [],
+  "puff_split": 0.0,
+  "breath2_from": 2.2
+ },
+ "text_col": {
+  "tagline": "#fffdf6",
+  "stack": "#f4f2e6",
+  "by": "#fff6e0",
+  "love": "#f4f2e6"
+ },
+ "vignette": "#0e1a10",
+ "title_shadow": "#0c0d22",
+ "world": "#2c4632",
+ "bokeh_cols": [
+  "#fffbe8",
+  "#f7f3dc",
+  "#fff6d6",
+  "#eef4e0",
+  "#fdf8ee"
+ ],
+ "bokeh_alpha": 0.26,
+ "leak": "#fff0c4",
+ "words": [
+  [
+   "BLOW",
+   -0.6,
+   4.863,
+   "#fffdf4",
+   0.85,
+   0.8,
+   -1.78,
+   false
+  ],
+  [
+   "FOLLOW",
+   4.863,
+   11.263,
+   "#fbfaf0",
+   0.85,
+   0.56,
+   -1.78,
+   false
+  ],
+  [
+   "POP",
+   11.263,
+   "card",
+   "#fff4f2",
+   0.88,
+   0.98,
+   -1.78,
+   false
+  ]
+ ],
+ "body_in": 0.22,
+ "side_rings": [],
+ "title_font": "~/Library/Fonts/SFProDisplay-Bold.otf",
+ "bg_image": "blender/textures/promo/garden3d_plate.jpg",
+ "title_shadow_a": 0.0,
+ "stack": "Expo \u00b7 React Native \u00b7 three.js WebGPU \u00b7 Blender"
+}

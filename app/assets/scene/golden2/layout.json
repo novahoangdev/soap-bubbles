@@ -1,0 +1,59 @@
+{
+ "w": 440,
+ "h": 956,
+ "ring": {
+  "x": 220.0,
+  "y": 764.8,
+  "r_inner": 70.0,
+  "r_outer": 87.0
+ },
+ "wand_front": {
+  "x": 131.33,
+  "y": 676.33,
+  "w": 177.33,
+  "h": 279.67,
+  "px": [
+   394,
+   2029,
+   532,
+   839
+  ],
+  "px_frame": [
+   1320,
+   2868
+  ]
+ },
+ "sun": {
+  "x": 141.18,
+  "y": 200.68
+ },
+ "sun_dir": [
+  -0.0346,
+  0.1219,
+  -0.9919
+ ],
+ "env": {
+  "file": "env.jpg",
+  "size": [
+   2048,
+   1024
+  ],
+  "projection": "equirectangular",
+  "forward_u": 0.5,
+  "right_u": 0.75,
+  "left_u": 0.25,
+  "back_u": 0.0,
+  "up": "v=0 is up (zenith), v=0.5 horizon, v=1 nadir",
+  "dir_to_uv": "camera space d (x right, y up, z towards viewer): u = 0.5 + atan2(d.x, -d.z) / (2*pi), v = 0.5 - asin(d.y) / pi",
+  "origin": "bubble position, 1.2 m in front of the camera, 12 cm above the lens axis; same orientation as the main camera"
+ },
+ "focus": {
+  "distance_m": 1.2,
+  "fstop": 2.0,
+  "m_per_pt": 0.0005316
+ },
+ "color": "sRGB display-referred (Blender AgX view transform baked in); backlit park at sunset",
+ "render_pct": 100,
+ "look": "golden2",
+ "note": "Golden hour v2: the low sun (7 deg up, 2 deg left of the lens axis) glows through the trees, upper-left; 'sun_dir' points from the bubble towards it in camera space. In env.jpg the sun is only a small hot core (~0.6 deg, a few clipped pixels) with a modest amber halo: use a small, tight, warm highlight. The sky runs amber-peach at the horizon to cream and a soft dusty blue overhead; the tree ring fades into warm haze towards the sun and blue-lilac haze behind the camera; the lawn is in shade."
+}
