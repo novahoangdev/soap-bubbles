@@ -7,7 +7,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 V=${1:?version name}
 U=$(cat notes/udid_rec.txt); D=$(cat notes/udid.txt)
-pkill -f "expo start --port" || true
+# (only this app's dev Metro, port 8092: a bare "expo start --port" pattern also killed other projects' servers)
+pkill -f "expo start.*--port 8092" || true
 xcrun simctl terminate "$D" dev.hoanghoa.soapbubbles 2>/dev/null || true
 MODE=3d DEMO3D=1 UDID=$U TS=${TS:-0.5} tools/embed.sh | tail -1
 mkdir -p render/promo/$V

@@ -223,6 +223,23 @@ function Meadow({ t }: { t: Tex }) {
   );
 }
 
+/** forest-strip radii (Trees: `rows`), about (0, 2) */
+const STRIP_R = [55, 80, 115];
+/**
+ * (x, z) moved along the radius from (0, 2) until a card of half-width hw there clears every strip by 0.5 m, to whichever
+ * side of the strip it mostly stood on (unchanged if it already clears them)
+ */
+const clearOfStrips = (x: number, z: number, hw: number): [number, number] => {
+  const d = Math.hypot(x, z - 2);
+  for (const R of STRIP_R) {
+    if (Math.abs(d - R) < hw + 0.5) {
+      const k = (d < R ? R - hw - 0.5 : R + hw + 0.5) / d;
+      return [x * k, 2 + (z - 2) * k];
+    }
+  }
+  return [x, z];
+};
+
 /**
  * Painted trees (Codex, Ghibli-style whole trees: tree_a tall, tree_b broad, tree_c medium) standing as cards that turn
  * about their trunk toward the camera; bushes at their feet; and behind the clearing, layered strips of painted forest edge
@@ -246,6 +263,9 @@ function Trees({ t }: { t: Tex }) {
       // decided from the position, so the random sequence of every later placement stays the same
       const kind = kind0 === 0 && Math.abs(x) < 9 && z < -30 ? 1 + (Math.abs(Math.round(x * 3.7)) % 2) : kind0;
       const k = kinds[kind];
+      // keep every card clear of the forest strips (arcs of radius 55 / 80 / 115 m about (0, 2)): a card standing across
+      // one was cut down a vertical line by the strip (13 of the far trees moved 1–8 m)
+      [x, z] = clearOfStrips(x, z, (k.w * s) / 2);
       const y0 = groundAt(x, z) - 0.15 * s;
       p.set(x, y0, z);
       const sh = 0.9 + r() * 0.15;
@@ -257,7 +277,7 @@ function Trees({ t }: { t: Tex }) {
       const framing = Math.abs(x) < 6 && z > -8;
       const flip = framing || hsh < 0.5 ? 1 : -1, hj = kind === 0 ? 0.65 + ((hsh * 7.31) % 1) * 0.45 : 0.85 + ((hsh * 7.31) % 1) * 0.3;
       // (round 12: the sunlit canopy read a little lime up close: a touch less green, warmer)
-      k.set.add(p, flip * k.w * s, k.h * s * hj, full, { sway: 0.06 * s, tint: [sh, sh * 0.95, sh * 0.88], phase: x * 0.3 + z * 0.2 });
+      k.set.add(p, flip * k.w * s, k.h * s * hj, full, { plane: true, sway: 0.06 * s, tint: [sh, sh * 0.95, sh * 0.88], phase: x * 0.3 + z * 0.2 });
       TRUNKS.push([x, z, 0.45 * s]);
     };
     const bush = (x: number, z: number, s0: number) => {
@@ -272,7 +292,7 @@ function Trees({ t }: { t: Tex }) {
       const s = s0 * (0.55 + ((hb * 5.13) % 1) * 0.95);
       p.set(x, groundAt(x, z) - 0.05 - 0.25 * s, z);
       const sh = 0.86 + r() * 0.16;
-      bushes[r() < 0.5 ? 0 : 1].add(p, 1.6 * s, 1.6 * s, full, { sway: 0.03, tint: [sh, sh, sh * 0.95] });
+      bushes[r() < 0.5 ? 0 : 1].add(p, 1.6 * s, 1.6 * s, full, { plane: true, sway: 0.03, tint: [sh, sh, sh * 0.95] });
     };
     // framing trees close by on both sides (their crowns over the top corners of the frame)
     tree(-5.2, -4.2, 0.7, 1);
@@ -312,9 +332,9 @@ function Trees({ t }: { t: Tex }) {
     // forest-edge strips: arcs of the painted treeline at 55, 80 and 115 m, the farther ones taller and hazier
     const strips: THREE.Mesh[] = [];
     const rows = [
-      { R: 55, H: 15, rep: 7, y: -1.5, lift: 0.0 },
-      { R: 80, H: 21, rep: 8, y: -2, lift: 0.12 },
-      { R: 115, H: 30, rep: 9, y: -2, lift: 0.25 },
+      { R: STRIP_R[0], H: 15, rep: 7, y: -1.5, lift: 0.0 },
+      { R: STRIP_R[1], H: 21, rep: 8, y: -2, lift: 0.12 },
+      { R: STRIP_R[2], H: 30, rep: 9, y: -2, lift: 0.25 },
     ];
     // each strip shifted along the painting (round 17: the same two poplars stood dead centre in every row)
     const offs = [0.13, 0.41, 0.77];

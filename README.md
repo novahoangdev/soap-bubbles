@@ -95,12 +95,12 @@ All the 3D showcase videos in one go (beat sheet from the `g34b` layout: the lon
 reel, then `tools/pack3d.sh` into `render/showcase-pack/`):
 
 ```bash
-tools/rec3d.sh g35
-VERSIONS="g2:first_take g8:painted_meadow g16:3D_flowers g32:short_cut g35:long_lofi_cut" tools/final3d.sh g35
+tools/rec3d.sh g36
+VERSIONS="g2:first_take g8:painted_meadow g16:3D_flowers g32:short_cut g36:long_lofi_cut" tools/final3d.sh g36
 ```
 
-Another soundtrack on the same picture (no re-render): copy `blender/scripts/beats/g35.json` to e.g. `g35p.json`, set
-`"music": {"style": "piano", "bars_to_card": 12}` and `"audio": "render/audio/mix_g35p.wav"`, then `tools/remux3d.sh g35 g35p`
+Another soundtrack on the same picture (no re-render): copy `blender/scripts/beats/g36.json` to e.g. `g36p.json`, set
+`"music": {"style": "piano", "bars_to_card": 12}` and `"audio": "render/audio/mix_g36p.wav"`, then `tools/remux3d.sh g36 g36p`
 (styles: `lofi` → `blender/scripts/lofi_garden.py`, `piano` → `blender/scripts/calm_piano.py`, both with the real birdsong of
 `blender/audio/birds/`).
 
