@@ -1,0 +1,308 @@
+{
+ "_doc": "Beat sheet g33b: the long, calm cut of the 3D garden (user, 04/11 evening: gentle, longer, more chill; time to see the butterflies and the bubbles). A puff, a long slow breath, the big bubble drifts off and the camera follows it ~14 s over the meadow, it pops, the camera drifts home to the wand, a second round of puffs, card. Chill music (no drums), events from the app log (tools/events3d.py), film start from the haze veil (tools/filmstart3d.py). Layout as g29b.",
+ "app_start": 0.2,
+ "app_end": 13.358,
+ "card": 3.6,
+ "sync_offset": 0.0,
+ "audio": "render/audio/mix_g29.wav",
+ "sheet": [
+  0.05,
+  1.6,
+  4.4,
+  7.36,
+  11.86,
+  15.36
+ ],
+ "screen_gain": 1.0,
+ "card_screen": null,
+ "bg": [
+  [
+   "start",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   0
+  ],
+  [
+   6.25,
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   120
+  ],
+  [
+   11.65,
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   120
+  ],
+  [
+   "card",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#f6f7f2",
+   "#fff2d6",
+   0.1,
+   0
+  ]
+ ],
+ "bokeh_n": 8,
+ "bubbles_n": 0,
+ "camera_d": 5.0,
+ "card_d": 8.6,
+ "card_phone": {
+  "loc": [
+   1.02,
+   -2.7,
+   0.0
+  ],
+  "rot": [
+   0,
+   0,
+   -8
+  ]
+ },
+ "card_x": -0.95,
+ "title": "Soap Bubbles",
+ "tagline": "Blow one. Follow it into the meadow.",
+ "title_in": 0.0,
+ "title_step": 0.035,
+ "music": {
+  "bars_to_card": 12,
+  "t0": 0.0,
+  "style": "chill"
+ },
+ "events": {
+  "breath": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.6,
+    0.0
+   ],
+   [
+    0.7,
+    0.9
+   ],
+   [
+    0.95,
+    0.85
+   ],
+   [
+    1.05,
+    0.0
+   ],
+   [
+    1.4,
+    0.0
+   ],
+   [
+    1.5,
+    0.95
+   ],
+   [
+    1.75,
+    0.9
+   ],
+   [
+    1.85,
+    0.0
+   ],
+   [
+    2.4,
+    0.0
+   ],
+   [
+    2.7,
+    0.35
+   ],
+   [
+    3.2,
+    0.5
+   ],
+   [
+    4.6,
+    0.55
+   ],
+   [
+    5.0,
+    0.0
+   ],
+   [
+    15.6,
+    0.0
+   ],
+   [
+    15.8,
+    0.9
+   ],
+   [
+    16.05,
+    0.85
+   ],
+   [
+    16.15,
+    0.0
+   ],
+   [
+    16.9,
+    0.0
+   ],
+   [
+    17.0,
+    0.95
+   ],
+   [
+    17.25,
+    0.9
+   ],
+   [
+    17.35,
+    0.0
+   ],
+   [
+    18.2,
+    0.0
+   ],
+   [
+    18.45,
+    0.3
+   ],
+   [
+    19.5,
+    0.32
+   ],
+   [
+    19.75,
+    0.0
+   ]
+  ],
+  "grow": [
+   2.4,
+   4.858
+  ],
+  "pinch": 4.858,
+  "puffs": [
+   0.666,
+   1.458
+  ],
+  "sticks": [],
+  "taps": [
+   6.125,
+   6.758,
+   6.966,
+   7.925,
+   8.175,
+   8.75,
+   9.158,
+   9.441,
+   9.925,
+   10.958,
+   11.408
+  ],
+  "big_pop": 12.458,
+  "drips": [],
+  "puff_split": 0.0,
+  "breath2_from": 2.2
+ },
+ "text_col": {
+  "tagline": "#2f4a2b",
+  "stack": "#3e5a39",
+  "by": "#35522f",
+  "love": "#4c6747"
+ },
+ "vignette": "#2a3a22",
+ "title_shadow": "#fff8ea",
+ "world": "#2c4632",
+ "bokeh_cols": [
+  "#fffbe8",
+  "#f7f3dc",
+  "#fff6d6",
+  "#eef4e0",
+  "#fdf8ee"
+ ],
+ "bokeh_alpha": 0.12,
+ "leak": "#fff0c4",
+ "words": [
+  [
+   "BLOW",
+   -0.6,
+   4.858,
+   "#35522f",
+   0.92,
+   1.25,
+   -1.55,
+   false
+  ],
+  [
+   "FOLLOW",
+   4.858,
+   12.458,
+   "#35522f",
+   0.92,
+   0.86,
+   -1.55,
+   false
+  ],
+  [
+   "POP",
+   12.458,
+   "card",
+   "#35522f",
+   0.92,
+   1.4,
+   -1.55,
+   false
+  ],
+  [
+   "AGAIN",
+   30.0,
+   "card",
+   "#35522f",
+   0.92,
+   1.1,
+   -1.55,
+   false
+  ]
+ ],
+ "body_in": 0.22,
+ "side_rings": [],
+ "title_font": "~/Library/Fonts/SFProRounded-Heavy.otf",
+ "bg_image": "blender/textures/promo/garden3d_plate.jpg",
+ "title_shadow_a": 0.0,
+ "stack": "Expo \u00b7 React Native \u00b7 three.js WebGPU \u00b7 Blender",
+ "phone_x": 0.62,
+ "body_align": "LEFT",
+ "body_layout": {
+  "tagline": [
+   0.24,
+   0.28,
+   1.0
+  ],
+  "stack": [
+   0.14,
+   -0.06,
+   1.0
+  ],
+  "by": [
+   0.17,
+   -0.42,
+   1.0
+  ],
+  "love": [
+   0.15,
+   -0.7,
+   1.0
+  ]
+ },
+ "title_col": "#2f4a2b"
+}

@@ -1,0 +1,14 @@
+diff --git a/node_modules/expo-audio/ios/AudioStream.swift b/node_modules/expo-audio/ios/AudioStream.swift
+index 1534fe5..b6fa627 100644
+--- a/node_modules/expo-audio/ios/AudioStream.swift
++++ b/node_modules/expo-audio/ios/AudioStream.swift
+@@ -34,7 +34,8 @@ class AudioStream: SharedObject {
+     guard !isStreaming else { return }
+ 
+     let session = AVAudioSession.sharedInstance()
+-    try session.setCategory(.record, mode: .measurement)
++    // play-and-record + mix: a record-only category (.record, .measurement) mutes every other sound in the app
++    try session.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .mixWithOthers, .allowBluetoothA2DP])
+     try session.setPreferredSampleRate(requestedSampleRate)
+     try session.setActive(true)
+ 

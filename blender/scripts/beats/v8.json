@@ -1,0 +1,204 @@
+{
+ "_doc": "Beat sheet v8 (03/11): recording render/promo/v8/screen.mp4 (film start 1.2667 from the corner sync marker: exact app t = 0) \u2014 fixed-step deterministic physics, demo taps pop exactly the chosen bubble, herding keeps the action in the dark middle band, giant centred until its self-pop at 14.0. Event times measured from a deterministic run (EXPO_PUBLIC_EVLOG=1). v8: demo holds t = 0 for 40 frames + sync marker; fingertip dot on taps.",
+ "app_start": 0.0,
+ "app_end": 14.8,
+ "card": 3.0,
+ "sync_offset": 0.0,
+ "audio": "render/audio/mix_v8.wav",
+ "sheet": [
+  0.05,
+  2.9,
+  5.6,
+  8.6,
+  11.2,
+  16.9
+ ],
+ "screen_gain": 1.04,
+ "card_screen": null,
+ "bg": [
+  [
+   "start",
+   "#f6b98a",
+   "#f3c9a0",
+   "#a9b894",
+   "#ffe3b0",
+   0.55,
+   0
+  ],
+  [
+   7.0,
+   "#f4a98a",
+   "#f2c3a2",
+   "#b1bb96",
+   "#ffe0b6",
+   0.6,
+   120
+  ],
+  [
+   12.4,
+   "#f2a46e",
+   "#f0bf8c",
+   "#a3b48d",
+   "#ffd99a",
+   0.62,
+   120
+  ],
+  [
+   "card",
+   "#eea27a",
+   "#f1c49f",
+   "#9fb08f",
+   "#ffe1b4",
+   0.5,
+   0
+  ]
+ ],
+ "bokeh_n": 26,
+ "bubbles_n": 9,
+ "camera_d": 5.0,
+ "card_d": 8.6,
+ "card_phone": {
+  "loc": [
+   1.22,
+   -2.7,
+   0.05
+  ],
+  "rot": [
+   0,
+   0,
+   -8
+  ]
+ },
+ "card_x": -0.95,
+ "title": "Soap Bubbles",
+ "tagline": "Blow. Watch it shimmer. Pop.",
+ "title_in": 0.12,
+ "title_step": 0.055,
+ "music": {
+  "bars_to_card": 7,
+  "t0": 0.0
+ },
+ "events": {
+  "breath": [
+   [
+    0,
+    0
+   ],
+   [
+    1.3,
+    0
+   ],
+   [
+    1.55,
+    0.28
+   ],
+   [
+    2.0,
+    0.4
+   ],
+   [
+    3.4,
+    0.42
+   ],
+   [
+    4.1,
+    0.36
+   ],
+   [
+    4.35,
+    0
+   ],
+   [
+    5.05,
+    0
+   ],
+   [
+    5.15,
+    0.92
+   ],
+   [
+    5.5,
+    0.9
+   ],
+   [
+    5.6,
+    0
+   ],
+   [
+    5.95,
+    0
+   ],
+   [
+    6.05,
+    0.96
+   ],
+   [
+    6.4,
+    0.92
+   ],
+   [
+    6.5,
+    0
+   ],
+   [
+    6.85,
+    0
+   ],
+   [
+    6.95,
+    0.86
+   ],
+   [
+    7.2,
+    0.85
+   ],
+   [
+    7.3,
+    0
+   ]
+  ],
+  "grow": [
+   1.4,
+   3.64
+  ],
+  "pinch": 3.64,
+  "puffs": [
+   5.1,
+   6.0,
+   6.9
+  ],
+  "sticks": [
+   4.855,
+   5.28,
+   5.45,
+   6.2,
+   6.78,
+   7.12,
+   8.61,
+   8.905,
+   9.17,
+   9.86,
+   11.92
+  ],
+  "taps": [
+   9.713,
+   10.263,
+   10.713,
+   11.113,
+   11.471,
+   11.821,
+   12.171,
+   12.955,
+   14.388,
+   14.705
+  ],
+  "big_pop": 14.021,
+  "drips": [
+   14.38,
+   14.46,
+   14.55,
+   14.63,
+   14.74
+  ]
+ }
+}

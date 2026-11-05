@@ -1,0 +1,41 @@
+{
+ "_doc": "Beat sheet v1 (03/11). Recording render/promo/v1/screen.mp4 (tools/rec.sh, 1320x2868, 60 fps CFR, demo time). All times are app/scene seconds (t = 0 = the first frame of the demo clock, PLAN section 2 + app/src/demo/script.ts) unless they are strings: 'start', 'card', 'card+0.5', 'end'. Clip = app_start..app_end of the recording with the phone STILL in the centre, then ONE straight cut to the end card (card seconds long, big phone on the right, text on the left). sync_offset: app second shown on the first frame where the garden appears in the recording (promo.sh detects that frame; 0 = the demo clock starts on the first drawn frame). events: the demo storyboard, used by mix_clip.py to place the SFX (sticks are physics-driven: adjust them after watching the recording).",
+ "app_start": 0.0,
+ "app_end": 14.8,
+ "card": 3.0,
+ "sync_offset": 0.0,
+ "audio": "render/audio/mix_v1.wav",
+ "sheet": [0.05, 2.9, 5.6, 8.6, 11.2, 16.9],
+ "screen_gain": 1.04,
+ "card_screen": null,
+ "bg": [
+  ["start", "#f6b98a", "#f3c9a0", "#a9b894", "#ffe3b0", 0.55, 0],
+  [7.0, "#f4a98a", "#f2c3a2", "#b1bb96", "#ffe0b6", 0.6, 120],
+  [12.4, "#f2a46e", "#f0bf8c", "#a3b48d", "#ffd99a", 0.62, 120],
+  ["card", "#eea27a", "#f1c49f", "#9fb08f", "#ffe1b4", 0.5, 0]
+ ],
+ "bokeh_n": 26,
+ "bubbles_n": 9,
+ "camera_d": 5.0,
+ "card_d": 8.6,
+ "card_phone": {"loc": [1.22, -2.7, 0.05], "rot": [0, 0, -8]},
+ "card_x": -0.95,
+ "title": "Soap Bubbles",
+ "tagline": "Blow. Watch it shimmer. Pop.",
+ "title_in": 0.12,
+ "title_step": 0.055,
+ "music": {"bars_to_card": 7, "t0": 0.0},
+ "events": {
+  "breath": [[0, 0], [1.3, 0], [1.55, 0.28], [2.0, 0.4], [3.4, 0.42], [4.1, 0.36], [4.35, 0],
+             [5.05, 0], [5.15, 0.92], [5.5, 0.9], [5.6, 0],
+             [5.95, 0], [6.05, 0.96], [6.4, 0.92], [6.5, 0],
+             [6.85, 0], [6.95, 0.86], [7.2, 0.85], [7.3, 0]],
+  "grow": [1.5, 3.9],
+  "pinch": 3.9,
+  "puffs": [5.1, 6.0, 6.9],
+  "sticks": [7.75, 8.35, 8.95],
+  "taps": [9.7, 10.25, 10.7, 11.1, 11.45, 11.8, 12.15],
+  "big_pop": 14.0,
+  "drips": [14.38, 14.46, 14.55, 14.63, 14.74]
+ }
+}

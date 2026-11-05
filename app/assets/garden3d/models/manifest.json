@@ -1,0 +1,152 @@
+[
+  {
+    "name": "tree_round_a",
+    "file": "tree_round_a.glb",
+    "height_m": 4.271,
+    "radius_m": 1.5552,
+    "tris": 4607
+  },
+  {
+    "name": "tree_round_b",
+    "file": "tree_round_b.glb",
+    "height_m": 4.9482,
+    "radius_m": 1.2522,
+    "tris": 4944
+  },
+  {
+    "name": "daisy_clump",
+    "file": "daisy_clump.glb",
+    "height_m": 0.2461,
+    "radius_m": 0.1027,
+    "tris": 5360
+  },
+  {
+    "name": "daisy_single",
+    "file": "daisy_single.glb",
+    "height_m": 0.1369,
+    "radius_m": 0.0602,
+    "tris": 724
+  },
+  {
+    "name": "bush_a",
+    "file": "bush_a.glb",
+    "height_m": 1.1046,
+    "radius_m": 0.8334,
+    "tris": 3994
+  },
+  {
+    "name": "bush_b",
+    "file": "bush_b.glb",
+    "height_m": 0.9786,
+    "radius_m": 0.7065,
+    "tris": 4976
+  },
+  {
+    "name": "mushroom_red",
+    "file": "mushroom_red.glb",
+    "height_m": 0.2546,
+    "radius_m": 0.122,
+    "tris": 1364
+  },
+  {
+    "name": "mushroom_pair",
+    "file": "mushroom_pair.glb",
+    "height_m": 0.16,
+    "radius_m": 0.1168,
+    "tris": 1012
+  },
+  {
+    "name": "fence_segment",
+    "file": "fence_segment.glb",
+    "height_m": 0.7137,
+    "radius_m": 1.0004,
+    "tris": 4472
+  },
+  {
+    "name": "stone_a",
+    "file": "stone_a.glb",
+    "height_m": 0.2552,
+    "radius_m": 0.2446,
+    "tris": 1280
+  },
+  {
+    "name": "stone_b",
+    "file": "stone_b.glb",
+    "height_m": 0.1302,
+    "radius_m": 0.1129,
+    "tris": 1280
+  },
+  {
+    "name": "stone_c",
+    "file": "stone_c.glb",
+    "height_m": 0.0971,
+    "radius_m": 0.3024,
+    "tris": 1280
+  },
+  {
+    "name": "wand",
+    "file": "wand.glb",
+    "height_m": 0.311,
+    "radius_m": 0.047,
+    "tris": 1376,
+    "origin": "ring_centre",
+    "ring_inner_radius_m": 0.035,
+    "ring_tube_radius_m": 0.006
+  },
+  {
+    "name": "flower_pot",
+    "file": "flower_pot.glb",
+    "height_m": 0.5167,
+    "radius_m": 0.1965,
+    "tris": 3563
+  },
+  {
+    "name": "tulip_clump",
+    "file": "tulip_clump.glb",
+    "height_m": 0.3494,
+    "radius_m": 0.1879,
+    "tris": 2034
+  },
+  {
+    "name": "buttercup_clump",
+    "file": "buttercup_clump.glb",
+    "height_m": 0.1104,
+    "radius_m": 0.0669,
+    "tris": 1299
+  },
+  {
+    "name": "forget_me_not",
+    "file": "forget_me_not.glb",
+    "height_m": 0.1536,
+    "radius_m": 0.0546,
+    "tris": 3259
+  },
+  {
+    "name": "poppy_clump",
+    "file": "poppy_clump.glb",
+    "height_m": 0.2169,
+    "radius_m": 0.075,
+    "tris": 1516
+  },
+  {
+    "name": "cornflower",
+    "file": "cornflower.glb",
+    "height_m": 0.169,
+    "radius_m": 0.0615,
+    "tris": 1703
+  },
+  {
+    "name": "clover_clump",
+    "file": "clover_clump.glb",
+    "height_m": 0.0822,
+    "radius_m": 0.0524,
+    "tris": 2932
+  },
+  {
+    "name": "cow_parsley",
+    "file": "cow_parsley.glb",
+    "height_m": 0.3616,
+    "radius_m": 0.0863,
+    "tris": 2979
+  }
+]

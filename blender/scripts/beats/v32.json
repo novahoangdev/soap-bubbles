@@ -1,0 +1,284 @@
+{
+ "_doc": "Beat sheet v32 (03/11): art director on v31 (realism 8.5): bg lower half (path lights, foreground leaves, lit hydrangeas, no grey haze), env without the house behind the camera, black cap opens as merging spots, clipped pop remnants, wand film shows only bright things, stronger handheld sway; promo backdrop = the app's own night garden defocused (bg_image), warm-white floating bokeh.",
+ "app_start": 0.0,
+ "app_end": 13.55,
+ "card": 3.0,
+ "sync_offset": 0.0,
+ "audio": "render/audio/mix_v32.wav",
+ "sheet": [
+  0.05,
+  2.0,
+  4.4,
+  7.4,
+  9.9,
+  15.4
+ ],
+ "screen_gain": 1.04,
+ "card_screen": null,
+ "bg": [
+  [
+   "start",
+   "#c4c6d2",
+   "#b4b6c4",
+   "#8e90a0",
+   "#ffd9a8",
+   0.12,
+   0
+  ],
+  [
+   6.25,
+   "#c4c6d2",
+   "#b4b6c4",
+   "#8e90a0",
+   "#ffd9a8",
+   0.12,
+   120
+  ],
+  [
+   11.65,
+   "#c4c6d2",
+   "#b4b6c4",
+   "#8e90a0",
+   "#ffd9a8",
+   0.12,
+   120
+  ],
+  [
+   "card",
+   "#c4c6d2",
+   "#b4b6c4",
+   "#8e90a0",
+   "#ffd9a8",
+   0.12,
+   0
+  ]
+ ],
+ "bokeh_n": 26,
+ "bubbles_n": 0,
+ "camera_d": 5.0,
+ "card_d": 8.6,
+ "card_phone": {
+  "loc": [
+   1.22,
+   -2.7,
+   0.05
+  ],
+  "rot": [
+   0,
+   0,
+   -8
+  ]
+ },
+ "card_x": -0.95,
+ "title": "Soap Bubbles",
+ "tagline": "Blow. Watch it shimmer. Pop.",
+ "title_in": 0.0,
+ "title_step": 0.035,
+ "music": {
+  "bars_to_card": 7,
+  "t0": 0.0
+ },
+ "events": {
+  "breath": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.8,
+    0.0
+   ],
+   [
+    1.0,
+    0.32
+   ],
+   [
+    1.35,
+    0.5
+   ],
+   [
+    2.5,
+    0.52
+   ],
+   [
+    2.95,
+    0.42
+   ],
+   [
+    3.1,
+    0.0
+   ],
+   [
+    3.8,
+    0.0
+   ],
+   [
+    3.9,
+    0.92
+   ],
+   [
+    4.25,
+    0.9
+   ],
+   [
+    4.35,
+    0.0
+   ],
+   [
+    4.7,
+    0.0
+   ],
+   [
+    4.8,
+    0.96
+   ],
+   [
+    5.15,
+    0.92
+   ],
+   [
+    5.25,
+    0.0
+   ],
+   [
+    5.6,
+    0.0
+   ],
+   [
+    5.7,
+    0.86
+   ],
+   [
+    5.95,
+    0.85
+   ],
+   [
+    6.05,
+    0.0
+   ],
+   [
+    11.0,
+    0.0
+   ],
+   [
+    11.2,
+    0.3
+   ],
+   [
+    11.75,
+    0.36
+   ],
+   [
+    12.2,
+    0.3
+   ],
+   [
+    12.3,
+    0.0
+   ]
+  ],
+  "grow": [
+   0.9,
+   2.833
+  ],
+  "pinch": 2.833,
+  "puffs": [
+   3.85,
+   4.75,
+   5.65
+  ],
+  "sticks": [
+   3.467,
+   4.017,
+   4.667,
+   5.1,
+   6.183,
+   6.933,
+   7.45,
+   7.883,
+   8.25,
+   8.667,
+   9.05,
+   9.517,
+   10.333,
+   10.817,
+   12.733
+  ],
+  "taps": [
+   8.467,
+   9.017,
+   9.467,
+   9.867,
+   10.217,
+   10.283,
+   10.567,
+   10.917,
+   12.683
+  ],
+  "big_pop": 12.767,
+  "drips": [
+   13.63,
+   13.71,
+   13.8,
+   13.88,
+   13.99
+  ],
+  "puff_split": 3.55,
+  "breath2_from": 10.75,
+  "pinch2": 12.417
+ },
+ "text_col": {
+  "tagline": "#ffe9c8",
+  "stack": "#d7d3f0",
+  "by": "#ffc7dc",
+  "love": "#d7d3f0"
+ },
+ "vignette": "#14162a",
+ "title_shadow": "#0c0d22",
+ "world": "#3a3a66",
+ "bokeh_cols": [
+  "#ffe2b8",
+  "#ffd49a",
+  "#fff0d8",
+  "#ffc98a",
+  "#f6e6d0"
+ ],
+ "bokeh_alpha": 0.3,
+ "leak": "#6a5040",
+ "words": [
+  [
+   "BLOW",
+   -0.6,
+   5.32,
+   "#fff1d6",
+   0.8,
+   1.6,
+   -1.98,
+   true
+  ],
+  [
+   "STICK",
+   5.32,
+   8.23,
+   "#ffe0b8",
+   0.8,
+   1.28,
+   -1.98,
+   true
+  ],
+  [
+   "POP",
+   8.23,
+   "card",
+   "#ffd6e6",
+   0.82,
+   1.95,
+   -1.98,
+   true
+  ]
+ ],
+ "body_in": 0.22,
+ "side_rings": [],
+ "title_font": "~/Library/Fonts/SFProDisplay-Bold.otf",
+ "bg_image": "blender/textures/promo/night_plate.jpg"
+}
