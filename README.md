@@ -8,18 +8,18 @@ environment map the bubbles reflect; Reanimated runs the physics on the UI threa
 Design notes: [PLAN.md](PLAN.md).
 
 <p align="center">
-  <a href="docs/demo.mp4"><img src="docs/demo.gif" width="480" alt="Soap Bubbles demo: a giant bubble drains to black film and pops"></a>
+  <a href="docs/demo.mp4"><img src="docs/demo.gif" width="640" alt="Soap Bubbles promo: bubbles stick together into a cluster and pop"></a>
   <br>
-  <a href="docs/demo.mp4"><b>▶ Watch the 2D demo with sound (MP4, 17 s)</b></a>
+  <a href="docs/demo.mp4"><b>▶ Watch the 2D promo with sound (MP4, 4:3, 17 s)</b></a>
 </p>
 
 A second mode flies through a painted 3D daisy meadow: blow a big bubble, then the camera drifts after it over the
 flowers until it pops (three.js WebGPU on React Native, lofi music over real birdsong).
 
 <p align="center">
-  <a href="docs/garden3d.mp4"><img src="docs/garden3d.gif" width="480" alt="Soap Bubbles 3D garden: the camera follows the big bubble over the daisy meadow"></a>
+  <a href="docs/garden3d.mp4"><img src="docs/garden3d.gif" width="640" alt="Soap Bubbles 3D garden promo: the camera follows the big bubble over the daisy meadow"></a>
   <br>
-  <a href="docs/garden3d.mp4"><b>▶ Watch the 3D garden with sound (MP4, 48 s)</b></a>
+  <a href="docs/garden3d.mp4"><b>▶ Watch the 3D garden promo with sound (MP4, 4:3, 48 s)</b></a>
 </p>
 
 Built with **Expo · React Native · [react-native-skia](https://shopify.github.io/react-native-skia/) ·
