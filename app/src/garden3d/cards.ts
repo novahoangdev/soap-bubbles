@@ -1,6 +1,6 @@
 import * as THREE from "three/webgpu";
 import {
-  attribute, uniform, texture, uv, cameraPosition, cameraViewMatrix, vec2, vec3, vec4, float, sin, normalize, cross, abs, clamp,
+  attribute, uniform, texture, uv, cameraPosition, cameraViewMatrix, cameraWorldMatrix, vec2, vec3, vec4, float, sin, normalize, cross, abs, clamp,
   log2, max, mix, smoothstep, varying, Fn, If, Discard, select, fwidth, mx_noise_float,
 } from "three/tsl";
 
@@ -11,7 +11,10 @@ import {
  *
  * One mesh (InstancedBufferGeometry, a unit quad rooted at its bottom edge) per atlas. Per instance:
  *   iPos  (xyz root position, w = sway phase)
- *   iSize (width, height, sway amplitude, mode: 0 = turns about y only (plants), 1 = faces the camera (foliage))
+ *   iSize (width, height, sway amplitude, mode: 0 = turns about y only (plants), 1 = faces the camera (foliage),
+ *          2 = turns about y parallel to the image plane (trees, bushes): all such cards stay parallel, so two that stand
+ *          close never cut through each other (turned each toward the camera, a broad tree 0.9 m from a poplar cut it
+ *          down a vertical line that slid across it as the follow camera flew: user, 05/11))
  *   iUv   (atlas cell: offset u, v, size u, v; v up)
  *   iTint (rgb multiplier, w = lift toward the haze colour)
  * A lens: cards far nearer (or farther) than the focus distance sample a blurrier mip, so the foreground melts like a
@@ -23,7 +26,7 @@ export const HAZE = uniform(new THREE.Color("#e8eedf"));
 
 export type CardSet = {
   mesh: THREE.Mesh;
-  add: (p: THREE.Vector3, w: number, h: number, cell: [number, number, number, number], opts?: { sway?: number; face?: boolean; tint?: [number, number, number]; lift?: number; phase?: number }) => void;
+  add: (p: THREE.Vector3, w: number, h: number, cell: [number, number, number, number], opts?: { sway?: number; face?: boolean; plane?: boolean; tint?: [number, number, number]; lift?: number; phase?: number }) => void;
   done: () => void;
 };
 
@@ -60,9 +63,12 @@ export const makeCards = (map: THREE.Texture, max_: number, alphaCut = 0.5, soft
   const worldPos = Fn(() => {
     const root = iPos.xyz;
     const toCam = cameraPosition.sub(root);
-    const face = iSize.w.greaterThan(0.5);
+    const face = iSize.w.greaterThan(0.5).and(iSize.w.lessThan(1.5));
+    const plane = iSize.w.greaterThan(1.5);
     const fFull = normalize(toCam);
-    const fFlat = normalize(vec3(toCam.x, 0.0, toCam.z).add(vec3(1e-4, 0, 0)));
+    // the camera's back axis in world space, from the camera being rendered (the cube camera's faces each get their own)
+    const back = cameraWorldMatrix.mul(vec4(0, 0, 1, 0)).xyz;
+    const fFlat = normalize(select(plane, vec3(back.x, 0.0, back.z), vec3(toCam.x, 0.0, toCam.z)).add(vec3(1e-4, 0, 0)));
     const f = select(face, fFull, fFlat);
     const right = normalize(cross(vec3(0, 1, 0), f));
     const up = select(face, cross(f, right), vec3(0, 1, 0));
@@ -99,7 +105,7 @@ export const makeCards = (map: THREE.Texture, max_: number, alphaCut = 0.5, soft
       if (n >= max_) return;
       const t = o.tint ?? [1, 1, 1];
       P.set([p.x, p.y, p.z, o.phase ?? Math.random() * 6.28], n * 4);
-      S.set([w, h, o.sway ?? 0, o.face ? 1 : 0], n * 4);
+      S.set([w, h, o.sway ?? 0, o.face ? 1 : o.plane ? 2 : 0], n * 4);
       U.set(c, n * 4);
       T.set([t[0], t[1], t[2], o.lift ?? 0], n * 4);
       n++;
